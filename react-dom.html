@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+</head>
+
+<body>
+    <h1>hello world</h1>
+    <div id="root"></div>
+    <!-- <script type="module" src="./app.js"></script> -->
+    <!-- <script src="./main2.js"></script> -->
+    <!-- <script src="./main1.js"></script> -->
+    <script>
+        // create element by dom
+        var h1Dom = document.createElement('h1');
+        h1Dom.title = 'xxxx';
+        h1Dom.className = 'h1dom';
+        h1Dom.innerText = 'h1 dome'
+        document.body.appendChild(h1Dom);
+
+
+
+        var ulDom = document.createElement('ul');
+        ulDom.style = 'color:red;font-size:30px'
+        var liDom1 = document.createElement('li');
+        liDom1.innerText = "js";
+        var liDom2 = document.createElement('li');
+        liDom2.innerText = 'php';
+        ulDom.appendChild(liDom1);
+        ulDom.appendChild(liDom2);
+        document.body.appendChild(ulDom);
+
+
+        // create element by React 
+
+        var h1React = React.createElement('h1', {
+            title: 'h1 react',
+            className: 'h1-react'
+        }, 'content h1 react', 'xxxxx')
+        console.log(h1Dom);
+        console.log(h1React);
+
+        var ulReact =  React.createElement(
+            'ul',
+            null,
+            React.createElement('li', null,'JS'),
+            React.createElement('li', null,'PHP'),
+        )
+        console.log(ulDom);
+        console.log(ulReact);
+
+        // get element root
+        var root =  document.getElementById('root');
+
+        // render by react-dom
+       ReactDOM.render(ulReact,root)
+
+    </script>
+</body>
+
+</html>

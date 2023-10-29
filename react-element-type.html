@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <!-- 1 react element type: string, function/class
+    - Wrapper
+        - header -> header component
+        - content -> content component
+        - footer -> footer component -->
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        // create element by React 
+
+        const courses = [
+            {
+                name:'vuejs'
+            },
+            {
+                name:'nodejs'
+            },
+            {
+                name:'html css'
+            },
+        ];
+        function Header() {
+            return <div className="header">Header Content</div>
+        }
+
+        function Content() {
+            return <div className="header">Content Content</div>
+        }
+        
+
+        function Footer() {
+            return <div className="header">Footer Content</div>
+        }
+
+        class Content2 extends React.Component {
+            render() {
+                return (
+                    <div className="header">Content Content2</div>
+                );
+            }
+        }
+        const app = (
+            <div className="wrapper">
+                <Header/>    
+                <Content/>    
+                <Content/>    
+                <Content/>    
+
+                <Content2/>    
+                <Footer/>    
+            </div>
+        );
+
+        console.log(app);
+
+        // get element root
+        var root =  document.getElementById('root');
+
+        // render by react-dom
+       ReactDOM.render(app,root)
+
+    </script>
+</body>
+
+</html>

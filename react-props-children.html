@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+// value nằm giữa ntn sẽ được auto đưa vào làm value của 1 key là children trong prop
+        function Button(props) {
+
+            return <button>{props.children}</button>
+        }
+        function H1Element(props) {
+
+            return <h1>{props.children}</h1>
+        }
+        // dùng rest để nhóm các biến còn lại vào biến tên inputAttr 
+        function Input({label, ...inputAttr}) {
+            return (
+                // dùng spread để trải các value của biến inputAttr ra
+                <div>
+                    <label>{label}</label>
+                    <input {...inputAttr}/>
+                    </div>
+            );
+        }
+
+        function List({data, children}) {
+        
+            return (
+                // 2 cachs render dưới như nhau , nhưng ưu tiên dùng cách dưới cho dễ nhìn và dễ hiểu
+                <ul>
+                    {data.map(children)}
+                    {data.map((...rest) => children(...rest))}
+                </ul>
+            )
+        }
+
+        // app.js
+
+        function App({ newParam }) {
+
+            const cars = ['Mec', "BMV", "Honda"]
+            // value nằm giữa ntn sẽ được auto đưa vào làm value của 1 key là children trong prop
+            return (
+                <div className="wrapper">
+                    <Input label="First Name" type="text" placeholder="Please enter"></Input>
+                    <Button>Click Me </Button>
+                    <List data={cars}>
+                        {(item, index) => <li key={index}>{item}</li>}
+                        </List>
+                </div>
+            );
+        }
+
+        // index.js
+        ReactDOM.render(<App />, document.getElementById('root'))
+    </script>
+</body>
+
+</html>

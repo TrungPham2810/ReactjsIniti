@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script>
+
+        var firstx = true;
+
+        console.log(firstx && 10)
+    </script>
+
+    <script type="text/babel">
+
+        const Form = {
+            // vieets ntn thì sẽ hiểu là object sẽ có 1 key là Input với giá trị là 1 function
+            // để call value key của 1 object ta có thể dùng Form[tên key]
+            Input() {
+                return <input />
+            },
+            Checkbox() {
+                var hello = {
+                    name: "trung",
+                    age: 20
+                }
+
+                return <input {...hello} type="checkbox" />
+            }
+        }
+
+        function Button(props) {
+            let Component = 'button';
+            console.log(props)
+            if(props.href) {
+                Component = 'a';
+            }
+            return <Component {...props}>{props.title}</Component>
+        }
+
+        // app.js
+
+        function App({newParam}) {
+            console.log(Form);
+            const type = 'Checkbox';
+            var ComponentChild = Form[type];
+            const firstTime = true;
+            // console.log({ ...hello });
+            return (
+                <div className="wrapper">
+                    {firstTime && <h1>Welcome in the first time</h1>}
+                    <h1>{newParam || 'gia tri mac dinh'}</h1>
+                    <Form.Checkbox />
+                    <Form.Input />
+                    <ComponentChild />
+                    <Button
+                        newprops = "true"
+                        title='Click me'
+                        // onClick = {() => console.log(1111)}
+                        href = "https://www.youtube.com/watch?v=UN2lcdMJDf4&t=1566s"
+                    />
+            
+                </div>
+            );
+        }
+
+        // index.js
+        ReactDOM.render(<App />, document.getElementById('root'))
+    </script>
+</body>
+
+</html>

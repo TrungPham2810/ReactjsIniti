@@ -1,0 +1,765 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'webpack',
+1 verbose cli   'webpack-cli',
+1 verbose cli   '--save-dev' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData webpack
+8 silly fetchPackageMetaData webpack-cli
+9 silly fetchNamedPackageData webpack
+10 silly mapToRegistry name webpack
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/webpack
+14 silly fetchNamedPackageData webpack-cli
+15 silly mapToRegistry name webpack-cli
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/webpack-cli
+19 verbose request uri https://registry.npmjs.org/webpack-cli
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 10:45:01 PM
+22 verbose request id e2983256b7515ddb
+23 verbose etag W/"606b6d5daeeabe02c1ec5cd56b5eb361"
+24 verbose lastModified Mon, 07 Jun 2021 16:38:49 GMT
+25 http request GET https://registry.npmjs.org/webpack-cli
+26 verbose request uri https://registry.npmjs.org/webpack
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 10:45:01 PM
+29 verbose etag W/"b2043de0c23cc8d14f3be5ca12ed9192"
+30 verbose lastModified Thu, 29 Jul 2021 14:20:17 GMT
+31 http request GET https://registry.npmjs.org/webpack
+32 http 200 https://registry.npmjs.org/webpack-cli
+33 verbose headers { date: 'Sun, 29 Oct 2023 15:45:02 GMT',
+33 verbose headers   'content-type': 'application/json',
+33 verbose headers   'transfer-encoding': 'chunked',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'cf-ray': '81dc8b13896f2112-HKG',
+33 verbose headers   'cf-cache-status': 'HIT',
+33 verbose headers   'access-control-allow-origin': '*',
+33 verbose headers   age: '140',
+33 verbose headers   'cache-control': 'public, max-age=300',
+33 verbose headers   etag: 'W/"e0d6d26d98ba12cd5f0e6ba029666f9c"',
+33 verbose headers   'last-modified': 'Wed, 07 Jun 2023 18:23:18 GMT',
+33 verbose headers   vary: 'accept-encoding, accept',
+33 verbose headers   server: 'cloudflare',
+33 verbose headers   'content-encoding': 'gzip' }
+34 silly get cb [ 200,
+34 silly get   { date: 'Sun, 29 Oct 2023 15:45:02 GMT',
+34 silly get     'content-type': 'application/json',
+34 silly get     'transfer-encoding': 'chunked',
+34 silly get     connection: 'keep-alive',
+34 silly get     'cf-ray': '81dc8b13896f2112-HKG',
+34 silly get     'cf-cache-status': 'HIT',
+34 silly get     'access-control-allow-origin': '*',
+34 silly get     age: '140',
+34 silly get     'cache-control': 'public, max-age=300',
+34 silly get     etag: 'W/"e0d6d26d98ba12cd5f0e6ba029666f9c"',
+34 silly get     'last-modified': 'Wed, 07 Jun 2023 18:23:18 GMT',
+34 silly get     vary: 'accept-encoding, accept',
+34 silly get     server: 'cloudflare',
+34 silly get     'content-encoding': 'gzip' } ]
+35 verbose get saving webpack-cli to /home/trungpham/.npm/registry.npmjs.org/webpack-cli/.cache.json
+36 http 200 https://registry.npmjs.org/webpack
+37 verbose headers { date: 'Sun, 29 Oct 2023 15:45:02 GMT',
+37 verbose headers   'content-type': 'application/json',
+37 verbose headers   'transfer-encoding': 'chunked',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'cf-ray': '81dc8b137fab07a9-HKG',
+37 verbose headers   'cf-cache-status': 'HIT',
+37 verbose headers   'access-control-allow-origin': '*',
+37 verbose headers   age: '249',
+37 verbose headers   'cache-control': 'public, max-age=300',
+37 verbose headers   etag: 'W/"e95280b2d89a89fd54754383d132b817"',
+37 verbose headers   'last-modified': 'Sat, 21 Oct 2023 01:43:48 GMT',
+37 verbose headers   vary: 'accept-encoding, accept',
+37 verbose headers   server: 'cloudflare',
+37 verbose headers   'content-encoding': 'gzip' }
+38 silly get cb [ 200,
+38 silly get   { date: 'Sun, 29 Oct 2023 15:45:02 GMT',
+38 silly get     'content-type': 'application/json',
+38 silly get     'transfer-encoding': 'chunked',
+38 silly get     connection: 'keep-alive',
+38 silly get     'cf-ray': '81dc8b137fab07a9-HKG',
+38 silly get     'cf-cache-status': 'HIT',
+38 silly get     'access-control-allow-origin': '*',
+38 silly get     age: '249',
+38 silly get     'cache-control': 'public, max-age=300',
+38 silly get     etag: 'W/"e95280b2d89a89fd54754383d132b817"',
+38 silly get     'last-modified': 'Sat, 21 Oct 2023 01:43:48 GMT',
+38 silly get     vary: 'accept-encoding, accept',
+38 silly get     server: 'cloudflare',
+38 silly get     'content-encoding': 'gzip' } ]
+39 verbose get saving webpack to /home/trungpham/.npm/registry.npmjs.org/webpack/.cache.json
+40 silly install normalizeTree
+41 silly loadCurrentTree Finishing
+42 silly loadIdealTree Starting
+43 silly install loadIdealTree
+44 silly cloneCurrentTree Starting
+45 silly install cloneCurrentTreeToIdealTree
+46 silly cloneCurrentTree Finishing
+47 silly loadShrinkwrap Starting
+48 silly install loadShrinkwrap
+49 silly loadShrinkwrap Finishing
+50 silly loadAllDepsIntoIdealTree Starting
+51 silly install loadAllDepsIntoIdealTree
+52 silly resolveWithNewModule webpack-cli@5.1.4 checking installable status
+53 silly cache add args [ 'webpack-cli', null ]
+54 verbose cache add spec webpack-cli
+55 silly resolveWithNewModule webpack@5.89.0 checking installable status
+56 silly cache add args [ 'webpack', null ]
+57 verbose cache add spec webpack
+58 silly cache add parsed spec Result {
+58 silly cache add   raw: 'webpack-cli',
+58 silly cache add   scope: null,
+58 silly cache add   name: 'webpack-cli',
+58 silly cache add   rawSpec: '',
+58 silly cache add   spec: 'latest',
+58 silly cache add   type: 'tag' }
+59 silly addNamed webpack-cli@latest
+60 verbose addNamed "latest" is being treated as a dist-tag for webpack-cli
+61 info addNameTag [ 'webpack-cli', 'latest' ]
+62 silly mapToRegistry name webpack-cli
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry uri https://registry.npmjs.org/webpack-cli
+66 verbose addNameTag registry:https://registry.npmjs.org/webpack-cli not in flight; fetching
+67 silly cache add parsed spec Result {
+67 silly cache add   raw: 'webpack',
+67 silly cache add   scope: null,
+67 silly cache add   name: 'webpack',
+67 silly cache add   rawSpec: '',
+67 silly cache add   spec: 'latest',
+67 silly cache add   type: 'tag' }
+68 silly addNamed webpack@latest
+69 verbose addNamed "latest" is being treated as a dist-tag for webpack
+70 info addNameTag [ 'webpack', 'latest' ]
+71 silly mapToRegistry name webpack
+72 silly mapToRegistry using default registry
+73 silly mapToRegistry registry https://registry.npmjs.org/
+74 silly mapToRegistry uri https://registry.npmjs.org/webpack
+75 verbose addNameTag registry:https://registry.npmjs.org/webpack not in flight; fetching
+76 verbose get https://registry.npmjs.org/webpack-cli not expired, no request
+77 silly addNameTag next cb for webpack-cli with tag latest
+78 silly addNamed webpack-cli@5.1.4
+79 verbose addNamed "5.1.4" is a plain semver version for webpack-cli
+80 verbose get https://registry.npmjs.org/webpack not expired, no request
+81 silly addNameTag next cb for webpack with tag latest
+82 silly addNamed webpack@5.89.0
+83 verbose addNamed "5.89.0" is a plain semver version for webpack
+84 silly mapToRegistry name webpack-cli
+85 silly mapToRegistry using default registry
+86 silly mapToRegistry registry https://registry.npmjs.org/
+87 silly mapToRegistry uri https://registry.npmjs.org/webpack-cli
+88 verbose addRemoteTarball https://registry.npmjs.org/webpack-cli/-/webpack-cli-5.1.4.tgz not in flight; adding
+89 verbose addRemoteTarball [ 'https://registry.npmjs.org/webpack-cli/-/webpack-cli-5.1.4.tgz',
+89 verbose addRemoteTarball   'c8e046ba7eaae4911d7e71e2b25b776fcc35759b' ]
+90 silly mapToRegistry name webpack
+91 silly mapToRegistry using default registry
+92 silly mapToRegistry registry https://registry.npmjs.org/
+93 silly mapToRegistry uri https://registry.npmjs.org/webpack
+94 verbose addRemoteTarball https://registry.npmjs.org/webpack/-/webpack-5.89.0.tgz not in flight; adding
+95 verbose addRemoteTarball [ 'https://registry.npmjs.org/webpack/-/webpack-5.89.0.tgz',
+95 verbose addRemoteTarball   '56b8bf9a34356e93a6625770006490bf3a7f32dc' ]
+96 info retry fetch attempt 1 at 10:45:02 PM
+97 info attempt registry request try #1 at 10:45:02 PM
+98 http fetch GET https://registry.npmjs.org/webpack-cli/-/webpack-cli-5.1.4.tgz
+99 info retry fetch attempt 1 at 10:45:02 PM
+100 info attempt registry request try #1 at 10:45:02 PM
+101 http fetch GET https://registry.npmjs.org/webpack/-/webpack-5.89.0.tgz
+102 http fetch 200 https://registry.npmjs.org/webpack/-/webpack-5.89.0.tgz
+103 http fetch 200 https://registry.npmjs.org/webpack-cli/-/webpack-cli-5.1.4.tgz
+104 silly fetchAndShaCheck shasum c8e046ba7eaae4911d7e71e2b25b776fcc35759b
+105 verbose addTmpTarball /tmp/npm-22110-18036f31/registry.npmjs.org/webpack-cli/-/webpack-cli-5.1.4.tgz not in flight; adding
+106 verbose addTmpTarball already have metadata; skipping unpack for webpack-cli@5.1.4
+107 silly cache afterAdd webpack-cli@5.1.4
+108 verbose afterAdd /home/trungpham/.npm/webpack-cli/5.1.4/package/package.json not in flight; writing
+109 verbose afterAdd /home/trungpham/.npm/webpack-cli/5.1.4/package/package.json written
+110 silly fetchAndShaCheck shasum 56b8bf9a34356e93a6625770006490bf3a7f32dc
+111 verbose addTmpTarball /tmp/npm-22110-18036f31/registry.npmjs.org/webpack/-/webpack-5.89.0.tgz not in flight; adding
+112 verbose addTmpTarball already have metadata; skipping unpack for webpack@5.89.0
+113 silly cache afterAdd webpack@5.89.0
+114 verbose afterAdd /home/trungpham/.npm/webpack/5.89.0/package/package.json not in flight; writing
+115 verbose afterAdd /home/trungpham/.npm/webpack/5.89.0/package/package.json written
+116 silly fetchNamedPackageData @types/eslint-scope
+117 silly mapToRegistry name @types/eslint-scope
+118 silly mapToRegistry scope (from package name) @types
+119 verbose mapToRegistry no registry URL found in name for scope @types
+120 silly mapToRegistry using default registry
+121 silly mapToRegistry registry https://registry.npmjs.org/
+122 silly mapToRegistry uri https://registry.npmjs.org/@types%2feslint-scope
+123 silly fetchNamedPackageData @types/estree
+124 silly mapToRegistry name @types/estree
+125 silly mapToRegistry scope (from package name) @types
+126 verbose mapToRegistry no registry URL found in name for scope @types
+127 silly mapToRegistry using default registry
+128 silly mapToRegistry registry https://registry.npmjs.org/
+129 silly mapToRegistry uri https://registry.npmjs.org/@types%2festree
+130 silly fetchNamedPackageData @webassemblyjs/ast
+131 silly mapToRegistry name @webassemblyjs/ast
+132 silly mapToRegistry scope (from package name) @webassemblyjs
+133 verbose mapToRegistry no registry URL found in name for scope @webassemblyjs
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry uri https://registry.npmjs.org/@webassemblyjs%2fast
+137 silly fetchNamedPackageData @webassemblyjs/wasm-edit
+138 silly mapToRegistry name @webassemblyjs/wasm-edit
+139 silly mapToRegistry scope (from package name) @webassemblyjs
+140 verbose mapToRegistry no registry URL found in name for scope @webassemblyjs
+141 silly mapToRegistry using default registry
+142 silly mapToRegistry registry https://registry.npmjs.org/
+143 silly mapToRegistry uri https://registry.npmjs.org/@webassemblyjs%2fwasm-edit
+144 silly fetchNamedPackageData @webassemblyjs/wasm-parser
+145 silly mapToRegistry name @webassemblyjs/wasm-parser
+146 silly mapToRegistry scope (from package name) @webassemblyjs
+147 verbose mapToRegistry no registry URL found in name for scope @webassemblyjs
+148 silly mapToRegistry using default registry
+149 silly mapToRegistry registry https://registry.npmjs.org/
+150 silly mapToRegistry uri https://registry.npmjs.org/@webassemblyjs%2fwasm-parser
+151 silly fetchNamedPackageData acorn
+152 silly mapToRegistry name acorn
+153 silly mapToRegistry using default registry
+154 silly mapToRegistry registry https://registry.npmjs.org/
+155 silly mapToRegistry uri https://registry.npmjs.org/acorn
+156 silly fetchNamedPackageData acorn-import-assertions
+157 silly mapToRegistry name acorn-import-assertions
+158 silly mapToRegistry using default registry
+159 silly mapToRegistry registry https://registry.npmjs.org/
+160 silly mapToRegistry uri https://registry.npmjs.org/acorn-import-assertions
+161 silly fetchNamedPackageData browserslist
+162 silly mapToRegistry name browserslist
+163 silly mapToRegistry using default registry
+164 silly mapToRegistry registry https://registry.npmjs.org/
+165 silly mapToRegistry uri https://registry.npmjs.org/browserslist
+166 silly fetchNamedPackageData chrome-trace-event
+167 silly mapToRegistry name chrome-trace-event
+168 silly mapToRegistry using default registry
+169 silly mapToRegistry registry https://registry.npmjs.org/
+170 silly mapToRegistry uri https://registry.npmjs.org/chrome-trace-event
+171 silly fetchNamedPackageData enhanced-resolve
+172 silly mapToRegistry name enhanced-resolve
+173 silly mapToRegistry using default registry
+174 silly mapToRegistry registry https://registry.npmjs.org/
+175 silly mapToRegistry uri https://registry.npmjs.org/enhanced-resolve
+176 silly fetchNamedPackageData es-module-lexer
+177 silly mapToRegistry name es-module-lexer
+178 silly mapToRegistry using default registry
+179 silly mapToRegistry registry https://registry.npmjs.org/
+180 silly mapToRegistry uri https://registry.npmjs.org/es-module-lexer
+181 silly fetchNamedPackageData eslint-scope
+182 silly mapToRegistry name eslint-scope
+183 silly mapToRegistry using default registry
+184 silly mapToRegistry registry https://registry.npmjs.org/
+185 silly mapToRegistry uri https://registry.npmjs.org/eslint-scope
+186 silly fetchNamedPackageData events
+187 silly mapToRegistry name events
+188 silly mapToRegistry using default registry
+189 silly mapToRegistry registry https://registry.npmjs.org/
+190 silly mapToRegistry uri https://registry.npmjs.org/events
+191 silly fetchNamedPackageData glob-to-regexp
+192 silly mapToRegistry name glob-to-regexp
+193 silly mapToRegistry using default registry
+194 silly mapToRegistry registry https://registry.npmjs.org/
+195 silly mapToRegistry uri https://registry.npmjs.org/glob-to-regexp
+196 silly fetchNamedPackageData graceful-fs
+197 silly mapToRegistry name graceful-fs
+198 silly mapToRegistry using default registry
+199 silly mapToRegistry registry https://registry.npmjs.org/
+200 silly mapToRegistry uri https://registry.npmjs.org/graceful-fs
+201 silly fetchNamedPackageData json-parse-even-better-errors
+202 silly mapToRegistry name json-parse-even-better-errors
+203 silly mapToRegistry using default registry
+204 silly mapToRegistry registry https://registry.npmjs.org/
+205 silly mapToRegistry uri https://registry.npmjs.org/json-parse-even-better-errors
+206 silly fetchNamedPackageData loader-runner
+207 silly mapToRegistry name loader-runner
+208 silly mapToRegistry using default registry
+209 silly mapToRegistry registry https://registry.npmjs.org/
+210 silly mapToRegistry uri https://registry.npmjs.org/loader-runner
+211 silly fetchNamedPackageData mime-types
+212 silly mapToRegistry name mime-types
+213 silly mapToRegistry using default registry
+214 silly mapToRegistry registry https://registry.npmjs.org/
+215 silly mapToRegistry uri https://registry.npmjs.org/mime-types
+216 silly fetchNamedPackageData neo-async
+217 silly mapToRegistry name neo-async
+218 silly mapToRegistry using default registry
+219 silly mapToRegistry registry https://registry.npmjs.org/
+220 silly mapToRegistry uri https://registry.npmjs.org/neo-async
+221 silly fetchNamedPackageData schema-utils
+222 silly mapToRegistry name schema-utils
+223 silly mapToRegistry using default registry
+224 silly mapToRegistry registry https://registry.npmjs.org/
+225 silly mapToRegistry uri https://registry.npmjs.org/schema-utils
+226 silly fetchNamedPackageData tapable
+227 silly mapToRegistry name tapable
+228 silly mapToRegistry using default registry
+229 silly mapToRegistry registry https://registry.npmjs.org/
+230 silly mapToRegistry uri https://registry.npmjs.org/tapable
+231 silly fetchNamedPackageData terser-webpack-plugin
+232 silly mapToRegistry name terser-webpack-plugin
+233 silly mapToRegistry using default registry
+234 silly mapToRegistry registry https://registry.npmjs.org/
+235 silly mapToRegistry uri https://registry.npmjs.org/terser-webpack-plugin
+236 silly fetchNamedPackageData watchpack
+237 silly mapToRegistry name watchpack
+238 silly mapToRegistry using default registry
+239 silly mapToRegistry registry https://registry.npmjs.org/
+240 silly mapToRegistry uri https://registry.npmjs.org/watchpack
+241 silly fetchNamedPackageData webpack-sources
+242 silly mapToRegistry name webpack-sources
+243 silly mapToRegistry using default registry
+244 silly mapToRegistry registry https://registry.npmjs.org/
+245 silly mapToRegistry uri https://registry.npmjs.org/webpack-sources
+246 verbose request uri https://registry.npmjs.org/@types%2feslint-scope
+247 verbose request no auth needed
+248 info attempt registry request try #1 at 10:45:03 PM
+249 http request GET https://registry.npmjs.org/@types%2feslint-scope
+250 verbose request uri https://registry.npmjs.org/@types%2festree
+251 verbose request no auth needed
+252 info attempt registry request try #1 at 10:45:03 PM
+253 http request GET https://registry.npmjs.org/@types%2festree
+254 verbose request uri https://registry.npmjs.org/@webassemblyjs%2fast
+255 verbose request no auth needed
+256 info attempt registry request try #1 at 10:45:03 PM
+257 http request GET https://registry.npmjs.org/@webassemblyjs%2fast
+258 verbose request uri https://registry.npmjs.org/@webassemblyjs%2fwasm-edit
+259 verbose request no auth needed
+260 info attempt registry request try #1 at 10:45:03 PM
+261 http request GET https://registry.npmjs.org/@webassemblyjs%2fwasm-edit
+262 verbose request uri https://registry.npmjs.org/@webassemblyjs%2fwasm-parser
+263 verbose request no auth needed
+264 info attempt registry request try #1 at 10:45:03 PM
+265 http request GET https://registry.npmjs.org/@webassemblyjs%2fwasm-parser
+266 verbose request uri https://registry.npmjs.org/acorn
+267 verbose request no auth needed
+268 info attempt registry request try #1 at 10:45:03 PM
+269 http request GET https://registry.npmjs.org/acorn
+270 verbose request uri https://registry.npmjs.org/acorn-import-assertions
+271 verbose request no auth needed
+272 info attempt registry request try #1 at 10:45:03 PM
+273 http request GET https://registry.npmjs.org/acorn-import-assertions
+274 verbose request uri https://registry.npmjs.org/chrome-trace-event
+275 verbose request no auth needed
+276 info attempt registry request try #1 at 10:45:03 PM
+277 http request GET https://registry.npmjs.org/chrome-trace-event
+278 verbose request uri https://registry.npmjs.org/enhanced-resolve
+279 verbose request no auth needed
+280 info attempt registry request try #1 at 10:45:03 PM
+281 http request GET https://registry.npmjs.org/enhanced-resolve
+282 verbose request uri https://registry.npmjs.org/es-module-lexer
+283 verbose request no auth needed
+284 info attempt registry request try #1 at 10:45:03 PM
+285 http request GET https://registry.npmjs.org/es-module-lexer
+286 verbose request uri https://registry.npmjs.org/eslint-scope
+287 verbose request no auth needed
+288 info attempt registry request try #1 at 10:45:03 PM
+289 http request GET https://registry.npmjs.org/eslint-scope
+290 verbose request uri https://registry.npmjs.org/events
+291 verbose request no auth needed
+292 info attempt registry request try #1 at 10:45:03 PM
+293 http request GET https://registry.npmjs.org/events
+294 verbose request uri https://registry.npmjs.org/glob-to-regexp
+295 verbose request no auth needed
+296 info attempt registry request try #1 at 10:45:03 PM
+297 http request GET https://registry.npmjs.org/glob-to-regexp
+298 verbose request uri https://registry.npmjs.org/graceful-fs
+299 verbose request no auth needed
+300 info attempt registry request try #1 at 10:45:03 PM
+301 http request GET https://registry.npmjs.org/graceful-fs
+302 verbose request uri https://registry.npmjs.org/json-parse-even-better-errors
+303 verbose request no auth needed
+304 info attempt registry request try #1 at 10:45:03 PM
+305 http request GET https://registry.npmjs.org/json-parse-even-better-errors
+306 verbose request uri https://registry.npmjs.org/loader-runner
+307 verbose request no auth needed
+308 info attempt registry request try #1 at 10:45:03 PM
+309 http request GET https://registry.npmjs.org/loader-runner
+310 verbose request uri https://registry.npmjs.org/mime-types
+311 verbose request no auth needed
+312 info attempt registry request try #1 at 10:45:03 PM
+313 http request GET https://registry.npmjs.org/mime-types
+314 verbose request uri https://registry.npmjs.org/neo-async
+315 verbose request no auth needed
+316 info attempt registry request try #1 at 10:45:03 PM
+317 http request GET https://registry.npmjs.org/neo-async
+318 verbose request uri https://registry.npmjs.org/schema-utils
+319 verbose request no auth needed
+320 info attempt registry request try #1 at 10:45:03 PM
+321 http request GET https://registry.npmjs.org/schema-utils
+322 verbose request uri https://registry.npmjs.org/tapable
+323 verbose request no auth needed
+324 info attempt registry request try #1 at 10:45:03 PM
+325 http request GET https://registry.npmjs.org/tapable
+326 verbose request uri https://registry.npmjs.org/watchpack
+327 verbose request no auth needed
+328 info attempt registry request try #1 at 10:45:03 PM
+329 http request GET https://registry.npmjs.org/watchpack
+330 verbose request uri https://registry.npmjs.org/webpack-sources
+331 verbose request no auth needed
+332 info attempt registry request try #1 at 10:45:03 PM
+333 http request GET https://registry.npmjs.org/webpack-sources
+334 verbose request uri https://registry.npmjs.org/terser-webpack-plugin
+335 verbose request no auth needed
+336 info attempt registry request try #1 at 10:45:03 PM
+337 verbose etag W/"67bdf84a50a4d057fbe07858093fb216"
+338 verbose lastModified Fri, 25 Jun 2021 12:33:50 GMT
+339 http request GET https://registry.npmjs.org/terser-webpack-plugin
+340 verbose request uri https://registry.npmjs.org/browserslist
+341 verbose request no auth needed
+342 info attempt registry request try #1 at 10:45:03 PM
+343 verbose etag W/"d16796d5b2c8c2d404edc189fef9ac5d"
+344 verbose lastModified Wed, 30 Jun 2021 11:56:23 GMT
+345 http request GET https://registry.npmjs.org/browserslist
+346 http 200 https://registry.npmjs.org/@types%2festree
+347 verbose headers { date: 'Sun, 29 Oct 2023 15:45:03 GMT',
+347 verbose headers   'content-type': 'application/json',
+347 verbose headers   'transfer-encoding': 'chunked',
+347 verbose headers   connection: 'keep-alive',
+347 verbose headers   'cf-ray': '81dc8b1a7ec307a9-HKG',
+347 verbose headers   'cf-cache-status': 'HIT',
+347 verbose headers   'access-control-allow-origin': '*',
+347 verbose headers   age: '99',
+347 verbose headers   'cache-control': 'public, max-age=300',
+347 verbose headers   etag: 'W/"f5d6aadecaf93a888f2593493fcce061"',
+347 verbose headers   'last-modified': 'Wed, 18 Oct 2023 02:00:00 GMT',
+347 verbose headers   vary: 'accept-encoding, accept',
+347 verbose headers   server: 'cloudflare',
+347 verbose headers   'content-encoding': 'gzip' }
+348 silly get cb [ 200,
+348 silly get   { date: 'Sun, 29 Oct 2023 15:45:03 GMT',
+348 silly get     'content-type': 'application/json',
+348 silly get     'transfer-encoding': 'chunked',
+348 silly get     connection: 'keep-alive',
+348 silly get     'cf-ray': '81dc8b1a7ec307a9-HKG',
+348 silly get     'cf-cache-status': 'HIT',
+348 silly get     'access-control-allow-origin': '*',
+348 silly get     age: '99',
+348 silly get     'cache-control': 'public, max-age=300',
+348 silly get     etag: 'W/"f5d6aadecaf93a888f2593493fcce061"',
+348 silly get     'last-modified': 'Wed, 18 Oct 2023 02:00:00 GMT',
+348 silly get     vary: 'accept-encoding, accept',
+348 silly get     server: 'cloudflare',
+348 silly get     'content-encoding': 'gzip' } ]
+349 verbose get saving @types/estree to /home/trungpham/.npm/registry.npmjs.org/_40types_252festree/.cache.json
+350 silly resolveWithNewModule @types/estree@1.0.3 checking installable status
+351 silly cache add args [ '@types/estree@^1.0.0', null ]
+352 verbose cache add spec @types/estree@^1.0.0
+353 silly cache add parsed spec Result {
+353 silly cache add   raw: '@types/estree@^1.0.0',
+353 silly cache add   scope: '@types',
+353 silly cache add   name: '@types/estree',
+353 silly cache add   rawSpec: '^1.0.0',
+353 silly cache add   spec: '>=1.0.0 <2.0.0',
+353 silly cache add   type: 'range' }
+354 silly addNamed @types/estree@>=1.0.0 <2.0.0
+355 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for @types/estree
+356 silly addNameRange { name: '@types/estree',
+356 silly addNameRange   range: '>=1.0.0 <2.0.0',
+356 silly addNameRange   hasData: false }
+357 silly mapToRegistry name @types/estree
+358 silly mapToRegistry scope (from package name) @types
+359 verbose mapToRegistry no registry URL found in name for scope @types
+360 silly mapToRegistry using default registry
+361 silly mapToRegistry registry https://registry.npmjs.org/
+362 silly mapToRegistry uri https://registry.npmjs.org/@types%2festree
+363 verbose addNameRange registry:https://registry.npmjs.org/@types%2festree not in flight; fetching
+364 verbose get https://registry.npmjs.org/@types%2festree not expired, no request
+365 silly addNameRange number 2 { name: '@types/estree', range: '>=1.0.0 <2.0.0', hasData: true }
+366 silly addNameRange versions [ '@types/estree',
+366 silly addNameRange   [ '0.0.15-alpha',
+366 silly addNameRange     '0.0.16-alpha',
+366 silly addNameRange     '0.0.21-alpha',
+366 silly addNameRange     '0.0.22-alpha',
+366 silly addNameRange     '0.0.23-alpha',
+366 silly addNameRange     '0.0.24-alpha',
+366 silly addNameRange     '0.0.25-alpha',
+366 silly addNameRange     '0.0.26-alpha',
+366 silly addNameRange     '0.0.27-alpha',
+366 silly addNameRange     '0.0.28',
+366 silly addNameRange     '0.0.29',
+366 silly addNameRange     '0.0.30',
+366 silly addNameRange     '0.0.31',
+366 silly addNameRange     '0.0.32',
+366 silly addNameRange     '0.0.33',
+366 silly addNameRange     '0.0.34',
+366 silly addNameRange     '0.0.35',
+366 silly addNameRange     '0.0.36',
+366 silly addNameRange     '0.0.37',
+366 silly addNameRange     '0.0.38',
+366 silly addNameRange     '0.0.39',
+366 silly addNameRange     '0.0.40',
+366 silly addNameRange     '0.0.41',
+366 silly addNameRange     '0.0.42',
+366 silly addNameRange     '0.0.43',
+366 silly addNameRange     '0.0.44',
+366 silly addNameRange     '0.0.45',
+366 silly addNameRange     '0.0.46',
+366 silly addNameRange     '0.0.47',
+366 silly addNameRange     '0.0.48',
+366 silly addNameRange     '0.0.49',
+366 silly addNameRange     '0.0.50',
+366 silly addNameRange     '0.0.51',
+366 silly addNameRange     '0.0.52',
+366 silly addNameRange     '1.0.0',
+366 silly addNameRange     '1.0.1',
+366 silly addNameRange     '1.0.2',
+366 silly addNameRange     '1.0.3' ] ]
+367 silly addNamed @types/estree@1.0.3
+368 verbose addNamed "1.0.3" is a plain semver version for @types/estree
+369 silly mapToRegistry name @types/estree
+370 silly mapToRegistry scope (from package name) @types
+371 verbose mapToRegistry no registry URL found in name for scope @types
+372 silly mapToRegistry using default registry
+373 silly mapToRegistry registry https://registry.npmjs.org/
+374 silly mapToRegistry uri https://registry.npmjs.org/@types%2festree
+375 verbose addRemoteTarball https://registry.npmjs.org/@types/estree/-/estree-1.0.3.tgz not in flight; adding
+376 verbose addRemoteTarball [ 'https://registry.npmjs.org/@types/estree/-/estree-1.0.3.tgz',
+376 verbose addRemoteTarball   '2be19e759a3dd18c79f9f436bd7363556c1a73dd' ]
+377 info retry fetch attempt 1 at 10:45:03 PM
+378 info attempt registry request try #1 at 10:45:03 PM
+379 http fetch GET https://registry.npmjs.org/@types/estree/-/estree-1.0.3.tgz
+380 http 200 https://registry.npmjs.org/loader-runner
+381 verbose headers { date: 'Sun, 29 Oct 2023 15:45:03 GMT',
+381 verbose headers   'content-type': 'application/json',
+381 verbose headers   'transfer-encoding': 'chunked',
+381 verbose headers   connection: 'keep-alive',
+381 verbose headers   'cf-ray': '81dc8b1ace3f0463-HKG',
+381 verbose headers   'cf-cache-status': 'HIT',
+381 verbose headers   'access-control-allow-origin': '*',
+381 verbose headers   age: '192',
+381 verbose headers   'cache-control': 'public, max-age=300',
+381 verbose headers   etag: 'W/"88e8e41f3bf4fe7198a339db906aa555"',
+381 verbose headers   'last-modified': 'Sun, 19 Jun 2022 13:13:56 GMT',
+381 verbose headers   vary: 'accept-encoding, accept',
+381 verbose headers   server: 'cloudflare',
+381 verbose headers   'content-encoding': 'gzip' }
+382 silly get cb [ 200,
+382 silly get   { date: 'Sun, 29 Oct 2023 15:45:03 GMT',
+382 silly get     'content-type': 'application/json',
+382 silly get     'transfer-encoding': 'chunked',
+382 silly get     connection: 'keep-alive',
+382 silly get     'cf-ray': '81dc8b1ace3f0463-HKG',
+382 silly get     'cf-cache-status': 'HIT',
+382 silly get     'access-control-allow-origin': '*',
+382 silly get     age: '192',
+382 silly get     'cache-control': 'public, max-age=300',
+382 silly get     etag: 'W/"88e8e41f3bf4fe7198a339db906aa555"',
+382 silly get     'last-modified': 'Sun, 19 Jun 2022 13:13:56 GMT',
+382 silly get     vary: 'accept-encoding, accept',
+382 silly get     server: 'cloudflare',
+382 silly get     'content-encoding': 'gzip' } ]
+383 verbose get saving loader-runner to /home/trungpham/.npm/registry.npmjs.org/loader-runner/.cache.json
+384 http 200 https://registry.npmjs.org/chrome-trace-event
+385 verbose headers { date: 'Sun, 29 Oct 2023 15:45:03 GMT',
+385 verbose headers   'content-type': 'application/json',
+385 verbose headers   'transfer-encoding': 'chunked',
+385 verbose headers   connection: 'keep-alive',
+385 verbose headers   'cf-ray': '81dc8b1acca40ec0-HKG',
+385 verbose headers   'cf-cache-status': 'HIT',
+385 verbose headers   'access-control-allow-origin': '*',
+385 verbose headers   age: '238',
+385 verbose headers   'cache-control': 'public, max-age=300',
+385 verbose headers   etag: 'W/"30fca2379a184914df65c95de2377093"',
+385 verbose headers   'last-modified': 'Mon, 13 Jun 2022 06:00:41 GMT',
+385 verbose headers   vary: 'accept-encoding, accept',
+385 verbose headers   server: 'cloudflare',
+385 verbose headers   'content-encoding': 'gzip' }
+386 silly get cb [ 200,
+386 silly get   { date: 'Sun, 29 Oct 2023 15:45:03 GMT',
+386 silly get     'content-type': 'application/json',
+386 silly get     'transfer-encoding': 'chunked',
+386 silly get     connection: 'keep-alive',
+386 silly get     'cf-ray': '81dc8b1acca40ec0-HKG',
+386 silly get     'cf-cache-status': 'HIT',
+386 silly get     'access-control-allow-origin': '*',
+386 silly get     age: '238',
+386 silly get     'cache-control': 'public, max-age=300',
+386 silly get     etag: 'W/"30fca2379a184914df65c95de2377093"',
+386 silly get     'last-modified': 'Mon, 13 Jun 2022 06:00:41 GMT',
+386 silly get     vary: 'accept-encoding, accept',
+386 silly get     server: 'cloudflare',
+386 silly get     'content-encoding': 'gzip' } ]
+387 verbose get saving chrome-trace-event to /home/trungpham/.npm/registry.npmjs.org/chrome-trace-event/.cache.json
+388 http 200 https://registry.npmjs.org/eslint-scope
+389 verbose headers { date: 'Sun, 29 Oct 2023 15:45:03 GMT',
+389 verbose headers   'content-type': 'application/json',
+389 verbose headers   'transfer-encoding': 'chunked',
+389 verbose headers   connection: 'keep-alive',
+389 verbose headers   'cf-ray': '81dc8b1acdd307b1-HKG',
+389 verbose headers   'cf-cache-status': 'HIT',
+389 verbose headers   'access-control-allow-origin': '*',
+389 verbose headers   age: '161',
+389 verbose headers   'cache-control': 'public, max-age=300',
+389 verbose headers   etag: 'W/"046aa8b142595631d41d3e1682601b17"',
+389 verbose headers   'last-modified': 'Fri, 28 Jul 2023 15:20:08 GMT',
+389 verbose headers   vary: 'accept-encoding, accept',
+389 verbose headers   server: 'cloudflare',
+389 verbose headers   'content-encoding': 'gzip' }
+390 silly get cb [ 200,
+390 silly get   { date: 'Sun, 29 Oct 2023 15:45:03 GMT',
+390 silly get     'content-type': 'application/json',
+390 silly get     'transfer-encoding': 'chunked',
+390 silly get     connection: 'keep-alive',
+390 silly get     'cf-ray': '81dc8b1acdd307b1-HKG',
+390 silly get     'cf-cache-status': 'HIT',
+390 silly get     'access-control-allow-origin': '*',
+390 silly get     age: '161',
+390 silly get     'cache-control': 'public, max-age=300',
+390 silly get     etag: 'W/"046aa8b142595631d41d3e1682601b17"',
+390 silly get     'last-modified': 'Fri, 28 Jul 2023 15:20:08 GMT',
+390 silly get     vary: 'accept-encoding, accept',
+390 silly get     server: 'cloudflare',
+390 silly get     'content-encoding': 'gzip' } ]
+391 verbose get saving eslint-scope to /home/trungpham/.npm/registry.npmjs.org/eslint-scope/.cache.json
+392 http 200 https://registry.npmjs.org/es-module-lexer
+393 verbose headers { date: 'Sun, 29 Oct 2023 15:45:03 GMT',
+393 verbose headers   'content-type': 'application/json',
+393 verbose headers   'transfer-encoding': 'chunked',
+393 verbose headers   connection: 'keep-alive',
+393 verbose headers   'cf-ray': '81dc8b1ac8271fa4-HKG',
+393 verbose headers   'cf-cache-status': 'HIT',
+393 verbose headers   'access-control-allow-origin': '*',
+393 verbose headers   age: '60',
+393 verbose headers   'cache-control': 'public, max-age=300',
+393 verbose headers   etag: 'W/"c39319488aab96647749ad0e7423f33f"',
+393 verbose headers   'last-modified': 'Sun, 10 Sep 2023 21:41:01 GMT',
+393 verbose headers   vary: 'accept-encoding, accept',
+393 verbose headers   server: 'cloudflare',
+393 verbose headers   'content-encoding': 'gzip' }
+394 silly get cb [ 200,
+394 silly get   { date: 'Sun, 29 Oct 2023 15:45:03 GMT',
+394 silly get     'content-type': 'application/json',
+394 silly get     'transfer-encoding': 'chunked',
+394 silly get     connection: 'keep-alive',
+394 silly get     'cf-ray': '81dc8b1ac8271fa4-HKG',
+394 silly get     'cf-cache-status': 'HIT',
+394 silly get     'access-control-allow-origin': '*',
+394 silly get     age: '60',
+394 silly get     'cache-control': 'public, max-age=300',
+394 silly get     etag: 'W/"c39319488aab96647749ad0e7423f33f"',
+394 silly get     'last-modified': 'Sun, 10 Sep 2023 21:41:01 GMT',
+394 silly get     vary: 'accept-encoding, accept',
+394 silly get     server: 'cloudflare',
+394 silly get     'content-encoding': 'gzip' } ]
+395 verbose get saving es-module-lexer to /home/trungpham/.npm/registry.npmjs.org/es-module-lexer/.cache.json
+396 silly resolveWithNewModule loader-runner@4.3.0 checking installable status
+397 silly cache add args [ 'loader-runner@^4.2.0', null ]
+398 verbose cache add spec loader-runner@^4.2.0
+399 silly cache add parsed spec Result {
+399 silly cache add   raw: 'loader-runner@^4.2.0',
+399 silly cache add   scope: null,
+399 silly cache add   name: 'loader-runner',
+399 silly cache add   rawSpec: '^4.2.0',
+399 silly cache add   spec: '>=4.2.0 <5.0.0',
+399 silly cache add   type: 'range' }
+400 silly addNamed loader-runner@>=4.2.0 <5.0.0
+401 verbose addNamed ">=4.2.0 <5.0.0" is a valid semver range for loader-runner
+402 silly addNameRange { name: 'loader-runner',
+402 silly addNameRange   range: '>=4.2.0 <5.0.0',
+402 silly addNameRange   hasData: false }
+403 silly mapToRegistry name loader-runner
+404 silly mapToRegistry using default registry
+405 silly mapToRegistry registry https://registry.npmjs.org/
+406 silly mapToRegistry uri https://registry.npmjs.org/loader-runner
+407 verbose addNameRange registry:https://registry.npmjs.org/loader-runner not in flight; fetching
+408 silly resolveWithNewModule chrome-trace-event@1.0.3 checking installable status
+409 silly cache add args [ 'chrome-trace-event@^1.0.2', null ]
+410 verbose cache add spec chrome-trace-event@^1.0.2
+411 silly cache add parsed spec Result {
+411 silly cache add   raw: 'chrome-trace-event@^1.0.2',
+411 silly cache add   scope: null,
+411 silly cache add   name: 'chrome-trace-event',
+411 silly cache add   rawSpec: '^1.0.2',
+411 silly cache add   spec: '>=1.0.2 <2.0.0',
+411 silly cache add   type: 'range' }
+412 silly addNamed chrome-trace-event@>=1.0.2 <2.0.0
+413 verbose addNamed ">=1.0.2 <2.0.0" is a valid semver range for chrome-trace-event
+414 silly addNameRange { name: 'chrome-trace-event',
+414 silly addNameRange   range: '>=1.0.2 <2.0.0',
+414 silly addNameRange   hasData: false }
+415 silly mapToRegistry name chrome-trace-event
+416 silly mapToRegistry using default registry
+417 silly mapToRegistry registry https://registry.npmjs.org/
+418 silly mapToRegistry uri https://registry.npmjs.org/chrome-trace-event
+419 verbose addNameRange registry:https://registry.npmjs.org/chrome-trace-event not in flight; fetching
+420 verbose get https://registry.npmjs.org/loader-runner not expired, no request
+421 silly addNameRange number 2 { name: 'loader-runner', range: '>=4.2.0 <5.0.0', hasData: true }
+422 silly addNameRange versions [ 'loader-runner',
+422 silly addNameRange   [ '2.0.0',
+422 silly addNameRange     '2.0.1',
+422 silly addNameRange     '2.1.0',
+422 silly addNameRange     '2.1.1',
+422 silly addNameRange     '2.2.0',
+422 silly addNameRange     '2.3.0',
+422 silly addNameRange     '2.3.1',
+422 silly addNameRange     '3.0.0',
+422 silly addNameRange     '2.4.0',
+422 silly addNameRange     '3.1.0',
+422 silly addNameRange     '4.0.0',
+422 silly addNameRange     '4.1.0',
+422 silly addNameRange     '4.2.0',
+422 silly addNameRange     '4.3.0' ] ]
+423 silly addNamed loader-runner@4.3.0
+424 verbose addNamed "4.3.0" is a plain semver version for loader-runner
+425 silly mapToRegistry name loader-runner
+426 silly mapToRegistry using default registry
+427 silly mapToRegistry registry https://registry.npmjs.org/
+428 silly mapToRegistry uri https://registry.npmjs.org/loader-runner
+429 verbose addRemoteTarball https://registry.npmjs.org/loader-runner/-/loader-runner-4.3.0.tgz not in flight; adding
+430 verbose addRemoteTarball [ 'https://registry.npmjs.org/loader-runner/-/loader-runner-4.3.0.tgz',
+430 verbose addRemoteTarball   'c1b4a163b99f614830353b16755e7149ac2314e1' ]
+431 silly resolveWithNewModule eslint-scope@5.1.1 checking installable status
+432 silly cache add args [ 'eslint-scope@5.1.1', null ]
+433 verbose cache add spec eslint-scope@5.1.1
+434 silly cache add parsed spec Result {
+434 silly cache add   raw: 'eslint-scope@5.1.1',
+434 silly cache add   scope: null,
+434 silly cache add   name: 'eslint-scope',
+434 silly cache add   rawSpec: '5.1.1',
+434 silly cache add   spec: '5.1.1',
+434 silly cache add   type: 'version' }
+435 silly addNamed eslint-scope@5.1.1
+436 verbose addNamed "5.1.1" is a plain semver version for eslint-scope
+437 silly mapToRegistry name eslint-scope
+438 silly mapToRegistry using default registry
+439 silly mapToRegistry registry https://registry.npmjs.org/
+440 silly mapToRegistry uri https://registry.npmjs.org/eslint-scope
+441 verbose addNameVersion registry:https://registry.npmjs.org/eslint-scope not in flight; fetching
+442 verbose stack Error: Missing required argument #1
+442 verbose stack     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+442 verbose stack     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+442 verbose stack     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+442 verbose stack     at /usr/share/npm/lib/install/deps.js:457:7
+442 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+442 verbose stack     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+442 verbose stack     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+442 verbose stack     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+442 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+442 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+443 verbose cwd /var/www/html/Learn Code/ReactJS/react-webpack
+444 error Linux 5.4.0-150-generic
+445 error argv "/usr/bin/node" "/usr/bin/npm" "install" "webpack" "webpack-cli" "--save-dev"
+446 error node v8.10.0
+447 error npm  v3.5.2
+448 error code EMISSINGARG
+449 error typeerror Error: Missing required argument #1
+449 error typeerror     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+449 error typeerror     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+449 error typeerror     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+449 error typeerror     at /usr/share/npm/lib/install/deps.js:457:7
+449 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+449 error typeerror     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+449 error typeerror     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+449 error typeerror     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+449 error typeerror     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+449 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+450 error typeerror This is an error with npm itself. Please report this error at:
+450 error typeerror     <http://github.com/npm/npm/issues>
+451 verbose exit [ 1, true ]
