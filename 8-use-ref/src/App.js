@@ -9,6 +9,7 @@ function App() {
 
     useEffect(() => {
       console.log(h1Ref.current);
+    //   getBoundingClientRect để lấy kích thước và vị trí của một phần tử.
       console.log(h1Ref.current.getBoundingClientRect());
 
     })

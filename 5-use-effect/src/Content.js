@@ -90,11 +90,17 @@ function Content() {
     }, [count])
 
     useEffect(() => {
+        // URL.createObjectURL () và URL.revokeObjectURL () methods cho phép bạn tạo các chuỗi URL đơn giản
+        //  có thể được sử dụng để tham chiếu bất kỳ dữ liệu nào có thể được tham chiếu đến bằng cách sử dụng đối tượng file DOM,
+        //   bao gồm các file cục bộ trên máy tính của người dùng.
         return () => {avatar && URL.revokeObjectURL(avatar.preview)};
     }, [avatar])
     const handlePreviewAvatar = (e) => {
         const file = e.target.files[0];
         console.log(e.target.files);
+         // URL.createObjectURL () và URL.revokeObjectURL () methods cho phép bạn tạo và xóa các chuỗi URL đơn giản
+        //  có thể được sử dụng để tham chiếu bất kỳ dữ liệu nào có thể được tham chiếu đến bằng cách sử dụng đối tượng file DOM,
+        //   bao gồm các file cục bộ trên máy tính của người dùng.
         file.preview = URL.createObjectURL(file);
         setAvatar(file)
     }
