@@ -17,10 +17,16 @@
     justify-content: space-between;
 
 }
+.search-result, .search {
+    width: 361px;
+}
 
+.search-title {
+    font-size: 1.4rem;
+    padding: 5px 16px
+}
 .search {
     background: rgba(22, 24, 35, 0.06);
-    width: 361px;
     height: 46px;
     padding-left: 16px;
     border-radius: var(--search-border-radius);
@@ -77,4 +83,8 @@
         color: #000;
         background: rgba(22, 24, 35, 0.06);
     }
+}
+
+.blue-text {
+    color: blue;
 }
