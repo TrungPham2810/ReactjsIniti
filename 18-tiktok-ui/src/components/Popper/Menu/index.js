@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Menu.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,11 +8,31 @@ import 'tippy.js/dist/tippy.css'; // optional
 
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import MenuItem from './MenuItem';
-const cx = classNames.bind(styles);
+import Header from './Header';
 
-function Menu({ children, items }) {
+const cx = classNames.bind(styles);
+// tạo 1 function trống ntn để lỡ ko có các props function đc truyền vào thì sẽ lấy theo default là cái này
+const defaultFn = () => {};
+function Menu({ children, items, onChange = defaultFn }) {
+    const [history, setHistory] = useState([{ data: items }]);
+    const current = history[history.length - 1];
     const renderItems = () => {
-        return items.map((item, index) => <MenuItem key={index} data={item} />);
+        return current.data.map((item, index) => {
+            const isParent = !!item.children;
+            return (
+                <MenuItem
+                    key={index}
+                    data={item}
+                    onClick={() => {
+                        if (isParent) {
+                            setHistory((prev) => [...prev, item.children]);
+                        } else {
+                            onChange(item);
+                        }
+                    }}
+                />
+            );
+        });
     };
     return (
         <Tippy
@@ -19,9 +40,20 @@ function Menu({ children, items }) {
             placement="bottom-end"
             delay={[0, 700]}
             // visible
+            onHide={() => setHistory((prev) => prev.slice(0, 1))}
             render={(attrs) => (
                 <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
-                    <PopperWrapper className={cx('menu-popper')}>{renderItems()}</PopperWrapper>
+                    <PopperWrapper className={cx('menu-popper')}>
+                        {history.length > 1 && (
+                            <Header
+                                title="Language"
+                                onBack={() => {
+                                    setHistory((prev) => prev.slice(0, prev.length - 1));
+                                }}
+                            />
+                        )}
+                        {renderItems()}
+                    </PopperWrapper>
                 </div>
             )}
         >
