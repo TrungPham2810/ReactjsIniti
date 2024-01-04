@@ -14,7 +14,10 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import 'tippy.js/dist/tippy.css'; // optional
 import Tippy from '@tippyjs/react';
-import { useEffect, useState } from 'react';
+import { default as routesConfig } from '~/config/routes';
+// import { hello as ok } from '~/config/routes';
+
+import { Link } from 'react-router-dom';
 
 import Button from '~/components/Button';
 import Search from '~/components/Layout/components/Search';
@@ -109,11 +112,14 @@ function Header() {
             to: '/logout',
         },
     ];
+
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className={cx('logo')}>
-                    <img src={images.logo} alt="Logo" />
+                    <Link to={routesConfig.home}>
+                        <img src={images.logo} alt="Logo" />
+                    </Link>
                 </div>
                 <Search />
 
