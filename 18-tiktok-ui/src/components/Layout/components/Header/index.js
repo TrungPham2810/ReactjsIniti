@@ -69,6 +69,98 @@ const MENU_ITEMS = [
                         ],
                     },
                 },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vn',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vn',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vn',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vn',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vn',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vn',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vn',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'vn',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vn',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vn',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vn',
+                    title: 'Tieng Viet',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vn',
+                    title: 'Tieng Viet',
+                },
             ],
         },
     },

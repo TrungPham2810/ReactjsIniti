@@ -13,7 +13,7 @@ import Header from './Header';
 const cx = classNames.bind(styles);
 // tạo 1 function trống ntn để lỡ ko có các props function đc truyền vào thì sẽ lấy theo default là cái này
 const defaultFn = () => {};
-function Menu({ children, items, onChange = defaultFn }) {
+function Menu({ children, items, onChange = defaultFn, ...passProp }) {
     const [history, setHistory] = useState([{ data: items }]);
     const current = history[history.length - 1];
     const renderItems = () => {
@@ -53,7 +53,7 @@ function Menu({ children, items, onChange = defaultFn }) {
                                 }}
                             />
                         )}
-                        {renderItems()}
+                        <div className={cx('menu-body')}>{renderItems()}</div>
                     </PopperWrapper>
                 </div>
             )}
