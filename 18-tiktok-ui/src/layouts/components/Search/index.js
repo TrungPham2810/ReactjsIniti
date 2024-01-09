@@ -6,13 +6,12 @@ import TippyHeadless from '@tippyjs/react/headless';
 import 'tippy.js/dist/tippy.css'; // optional
 import { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
-
+import * as searchService from '~/services/searchService';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import AccountItem from '~/components/AccountItem';
 import { useDebounce } from '~/hooks';
 
 const cx = classNames.bind(styles);
-var countxx = 1;
 function Search() {
     const [searchValue, setSearchValue] = useState('');
     const [searchResult, setSearchResult] = useState([]);
@@ -35,7 +34,6 @@ function Search() {
     const handleSubmit = (e) => {
         // console.log(e);
     };
-    countxx++;
     useEffect(() => {
         // setTimeout(() => {
         //     setSearchResult([1, 2, 3]);
@@ -43,21 +41,32 @@ function Search() {
         if (!debounced.trim()) {
             return;
         }
-        setLoading(true);
-        axios
-            .get(`https://tiktok.fullstack.edu.vn/api/users/search`, {
-                params: {
-                    type: 'less',
-                    q: encodeURIComponent(debounced),
-                },
-            })
-            .then((res) => {
-                setSearchResult(res.data.data);
-                setLoading(false);
-            })
-            .catch(() => {
-                setLoading(false);
-            });
+        const fetchApi = async () => {
+            setLoading(true);
+
+            const result = await searchService.search(debounced);
+
+            setSearchResult(result);
+            setLoading(false);
+        };
+
+        fetchApi();
+
+        // setLoading(true);
+        // axios
+        //     .get(`https://tiktok.fullstack.edu.vn/api/users/search`, {
+        //         params: {
+        //             type: 'less',
+        //             q: encodeURIComponent(debounced),
+        //         },
+        //     })
+        //     .then((res) => {
+        //         setSearchResult(res.data.data);
+        //         setLoading(false);
+        //     })
+        //     .catch(() => {
+        //         setLoading(false);
+        //     });
     }, [debounced]);
     return (
         // Using a wrapper <div> or <span> tag around the reference element solves this by creating a new parentNode context.

@@ -20,7 +20,7 @@ import { default as routesConfig } from '~/config/routes';
 import { Link } from 'react-router-dom';
 
 import Button from '~/components/Button';
-import Search from '~/components/Layout/components/Search';
+import Search from '~/layouts/components/Search';
 
 import Menu from '~/components/Popper/Menu';
 import { MessageIcon, UploadIcon } from '~/components/Icons';
@@ -176,9 +176,7 @@ const MENU_ITEMS = [
 ];
 
 function Header() {
-    const handleOnChange = (menuItem) => {
-        console.log(menuItem);
-    };
+    const handleOnChange = (menuItem) => {};
     const currentUser = true;
 
     const userMenu = [
