@@ -1,0 +1,12 @@
+.header-middle {
+    max-width: var(--default-layout-width);
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px 0;
+}
+
+.header-right {
+    display: flex;
+}

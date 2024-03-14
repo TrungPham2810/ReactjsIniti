@@ -1,0 +1,33 @@
+.wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #6e716e;
+    text-align: right;
+    color: var(--colorWhite);
+    font-size: var(--defautl-font-size);
+}
+.content {
+    max-width: var(--default-layout-width);
+    display: block;
+    text-align: right;
+    margin: auto;
+    line-height: 20px;
+}
+
+.content-item {
+    padding: 0 5px;
+    text-decoration: none;
+    color: var(--colorWhite);
+}
+.content-item a {
+    padding: 0 5px;
+    text-decoration: none;
+    color: var(--colorWhite);
+}
+.content-item a:hover {
+    text-decoration: underline;
+}
+.authorization-link::after {
+    content: attr(data-label);
+    padding-left: 10px;
+}
