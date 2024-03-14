@@ -1,12 +1,9 @@
 import classNames from 'classnames/bind';
 import styles from './Navigation.module.scss';
 import { Link } from 'react-router-dom';
-import TippyHeadless from '@tippyjs/react/headless';
 import 'tippy.js/dist/tippy.css'; // optional
 import Tippy from '@tippyjs/react';
 import { useState } from 'react';
-import Test from './Test';
-import { Fragment } from 'react';
 const cx = classNames.bind(styles);
 const NAV_ITEMS = [
     {
